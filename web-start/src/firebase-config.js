@@ -7,7 +7,7 @@
  * 4. Copy the config object snippet, then add it here.
  */
 const config = {
-  apiKey: "AIzaSyDxU7bYftj8GN-vO-qZP4HB6DLGqIruk-U",
+  apiKey: proccess.env,
   authDomain: "friendlychat-bb4f4.firebaseapp.com",
   projectId: "friendlychat-bb4f4",
   storageBucket: "friendlychat-bb4f4.appspot.com",

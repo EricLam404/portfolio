@@ -4,7 +4,7 @@ import { HTMLIcon, CSSIcon, TailwindCSSIcon, ReactIcon, NextIcon } from './Icons
 import { NodeIcon, ExpressIcon, PrismaIcon } from './Icons';
 import { MongoDBIcon, FirebaseIcon, SQLIcon, PostgreSQLIcon } from './Icons';
 import { JestIcon, DoctestIcon } from './Icons';
-//import { JSIcon, PythonIcon, CppIcon } from './Icons';
+import { GitIcon, GithubIcon, MakefileIcon } from './Icons';
 
 const languages = [
     {name: "JavaScript", icon: <JSIcon className="w-[64px] h-[64px]" />},
@@ -39,8 +39,9 @@ const testing = [
 ]
 
 const other = [
-    {name: "Git", icon: <JSIcon className="w-[64px] h-[64px]" />},
-    {name: "Makefile", icon: <JSIcon className="w-[64px] h-[64px]" />},
+    {name: "Git", icon: <GitIcon className="w-[64px] h-[64px]" />},
+    {name: "Github", icon: <GithubIcon className="w-[64px] h-[64px]" />},
+    {name: "Makefile", icon: <MakefileIcon className="w-[64px] h-[64px]" />},
 ]
 
 
@@ -72,8 +73,8 @@ return (
             <Card type="Frontend" skills={frontend} />
             <Card type="Backend" skills={backend} />
             <Card type="Databases" skills={database} />
-            <Card type="Version Control" skills={testing} />
-            <Card type="Testing" skills={other} />
+            <Card type="Testing" skills={testing} />
+            <Card type="Other" skills={other} />
         </div>
     </div>
     );

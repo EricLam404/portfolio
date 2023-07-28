@@ -19,7 +19,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
         lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4
         '>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-2xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]' />
-            <Link href={link} target='_blank'
+            {/*<Link href={link} target='_blank'
             className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'
             >
                 <FramerImage src={img} alt={title} className='w-full h-auto' 
@@ -30,7 +30,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
                       (max-width: 1200px) 50vw, 
                       50vw' 
                 />
-            </Link>
+            </Link>*/}
 
             <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
                 <span className='text-primary font-medium text-xl dark:text-primaryDark xs:text-base'>{type}</span>
@@ -55,6 +55,7 @@ const Project = ({type, title, img, link, github}) => {
     return (
         <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light shadow-2xl p-6 relative dark:bg-dark dark:border-light xs:p-4'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-2xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem] ' />
+            {/*
             <Link href={link} target='_blank'
             className='w-full cursor-pointer overflow-hidden rounded-lg'
             >
@@ -67,6 +68,7 @@ const Project = ({type, title, img, link, github}) => {
                       50vw' 
                 />
             </Link>
+            */}
 
             <div className='w-full flex flex-col items-start justify-between mt-4'>
                 <span className='text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base'>{type}</span>
@@ -96,35 +98,89 @@ const projects = () => {
         <TransitionEffect />
         <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
             <Layout className='pt-16'>
-                <AnimatedText text="Imagination Trumps Knowledge!" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
+                <AnimatedText text="Transforming ideas into elegant solutions, one line of code at a time." className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
 
                 <div className='grid grid-cols-12 gap-32 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                     <div className='col-span-12'>
                         <FeaturedProject 
-                            title="Featured Project"
-                            summary="Featured Project Summary"
+                            title="KwattAchieve"
+                            summary="KwattAchieve is a comprehensive platform designed to enhance student engagement and motivation in robotics, coding, and electronics classes."
                             img={project1}
                             link="/"
                             type="Featured Project"
-                            github="/"
+                            github="https://github.com/EricLam404/achievement-tracker"
                         />
                     </div>
                     <div className='col-span-6 sm:col-span-12'>
                         <Project 
-                            title="Project"
+                            title="Etch-a-sketch"
                             img={project1}
-                            link="/"
+                            link="https://ericlam404.github.io/etch-a-sketch/"
                             type="Project"
-                            github="/"
+                            github="https://github.com/EricLam404/etch-a-sketch"
                         />
                     </div>
                     <div className='col-span-6 sm:col-span-12'>
                         <Project 
-                            title="Project"
+                            title="Calculator"
+                            img={project1}
+                            link="https://ericlam404.github.io/calculator/"
+                            type="Project"
+                            github="https://github.com/EricLam404/calculator"
+                        />
+                    </div>
+                    <div className='col-span-6 sm:col-span-12'>
+                        <Project 
+                            title="Weather App"
+                            img={project1}
+                            link="https://ericlam404.github.io/weather-app/"
+                            type="Project"
+                            github="https://github.com/EricLam404/weather-app"
+                        />
+                    </div>
+                    <div className='col-span-6 sm:col-span-12'>
+                        <Project 
+                            title="Library"
+                            img={project1}
+                            link="https://ericlam404.github.io/library/"
+                            type="Project"
+                            github="https://github.com/EricLam404/library"
+                        />
+                    </div>
+                    <div className='col-span-6 sm:col-span-12'>
+                        <Project 
+                            title="To-Do List"
+                            img={project1}
+                            link="https://ericlam404.github.io/todo-list/"
+                            type="Project"
+                            github="https://github.com/EricLam404/todo-list"
+                        />
+                    </div>
+                    <div className='col-span-6 sm:col-span-12'>
+                        <Project 
+                            title="Where's Waldo"
+                            img={project1}
+                            link="https://wheres-waldo-b6824.web.app/"
+                            type="Project"
+                            github="https://github.com/EricLam404/wheres-waldo"
+                        />
+                    </div>
+                    <div className='col-span-6 sm:col-span-12'>
+                        <Project 
+                            title="Fortnite Shopping Cart"
+                            img={project1}
+                            link="https://ericlam404.github.io/shopping-cart/"
+                            type="Project"
+                            github="https://github.com/EricLam404/shopping-cart"
+                        />
+                    </div>
+                    <div className='col-span-6 sm:col-span-12'>
+                        <Project 
+                            title="Crow Gang Discord Bot"
                             img={project1}
                             link="/"
                             type="Project"
-                            github="/"
+                            github="https://github.com/EricLam404/crow-gang"
                         />
                     </div>
                 </div>

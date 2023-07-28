@@ -947,7 +947,7 @@ export const PostgreSQLIcon = ({ className, ...rest }) => (
   </svg>
 )
 
-export const JestLIcon = ({ className, ...rest }) => (
+export const JestIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={2261}

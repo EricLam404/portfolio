@@ -34,8 +34,8 @@ const database = [
 ]
 
 const testing = [
-    {name: "Jest", icon: <JSIcon className="w-[64px] h-[64px]" />},
-    {name: "Doctest", icon: <PythonIcon className="w-[64px] h-[64px]" />},
+    {name: "Jest", icon: <JestIcon className="w-[64px] h-[64px]" />},
+    {name: "Doctest", icon: <DoctestIcon className="w-[64px] h-[64px]" />},
 ]
 
 const other = [

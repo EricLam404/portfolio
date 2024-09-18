@@ -6,53 +6,53 @@ import { MongoDBIcon, FirebaseIcon, SQLIcon, PostgreSQLIcon } from './Icons';
 import { JestIcon, DoctestIcon } from './Icons';
 import { GitIcon, GithubIcon, MakefileIcon, NPMIcon, WebpackIcon } from './Icons';
 
+const size = "!w-[64px] !h-[64px] sm:!w-[48px] sm:!h-[48px] xs:!w-[40px] xs:!h-[40px]";
 const languages = [
-    {name: "JavaScript", icon: <JSIcon className="!w-[64px] !h-[64px]" />},
-    {name: "Python", icon: <PythonIcon className="!w-[64px] !h-[64px]" />},
-    {name: "C/C++", icon: <CppIcon className="!w-[64px] !h-[64px]" />},
+    {name: "JavaScript", icon: <JSIcon className={`${size}`} />},
+    {name: "Python", icon: <PythonIcon className={`${size}`} />},
+    {name: "C/C++", icon: <CppIcon className={`${size}`} />},
 ]
 
 const frontend = [
-    {name: "HTML", icon: <HTMLIcon className="!w-[64px] !h-[64px]" />},
-    {name: "CSS", icon: <CSSIcon className="!w-[64px] !h-[64px]" />},
-    {name: "TailwindCSS", icon: <TailwindCSSIcon className="!w-[64px] !h-[64px]" />},
-    {name: "React.js", icon: <ReactIcon className="!w-[64px] !h-[64px]" />},
-    {name: "Next.js", icon: <NextIcon className="!w-[64px] !h-[64px]" />},
+    {name: "HTML", icon: <HTMLIcon className={`${size}`} />},
+    {name: "CSS", icon: <CSSIcon className={`${size}`} />},
+    {name: "TailwindCSS", icon: <TailwindCSSIcon className={`${size}`} />},
+    {name: "React.js", icon: <ReactIcon className={`${size}`} />},
+    {name: "Next.js", icon: <NextIcon className={`${size}`} />},
 ]
 
 const backend = [
-    {name: "Node.js", icon: <NodeIcon className="!w-[64px] !h-[64px]" />},
-    {name: "Express.js", icon: <ExpressIcon className="!w-[64px] !h-[64px]" />},
-    {name: "Prisma", icon: <PrismaIcon className="!w-[64px] !h-[64px] dark:bg-dark rounded-2xl p-2" />},
+    {name: "Node.js", icon: <NodeIcon className={`${size}`} />},
+    {name: "Express.js", icon: <ExpressIcon className={`${size}`} />},
+    {name: "Prisma", icon: <PrismaIcon className={`${size} dark:bg-dark rounded-2xl p-2`} />},
 ]
 
 const database = [
-    {name: "MongoDB", icon: <MongoDBIcon className="!w-[64px] !h-[64px]" />},
-    {name: "Firebase", icon: <FirebaseIcon className="!w-[64px] !h-[64px]" />},
-    {name: "SQL", icon: <SQLIcon className="!w-[64px] !h-[64px]" />},
-    {name: "PostgreSQL", icon: <PostgreSQLIcon className="!w-[64px] !h-[64px]" />},
+    {name: "MongoDB", icon: <MongoDBIcon className={`${size}`} />},
+    {name: "Firebase", icon: <FirebaseIcon className={`${size}`} />},
+    {name: "SQL", icon: <SQLIcon className={`${size}`} />},
+    {name: "PostgreSQL", icon: <PostgreSQLIcon className={`${size}`} />},
 ]
 
 const testing = [
-    {name: "Jest", icon: <JestIcon className="!w-[64px] !h-[64px]" />},
-    {name: "Doctest", icon: <DoctestIcon className="!w-[64px] !h-[64px]" />},
+    {name: "Jest", icon: <JestIcon className={`${size}`} />},
+    {name: "Doctest", icon: <DoctestIcon className={`${size}`} />},
 ]
 
 const miscellaneous = [
-    {name: "Git", icon: <GitIcon className="!w-[64px] !h-[64px]" />},
-    {name: "Github", icon: <GithubIcon className="!w-[64px] !h-[64px] border border-solid rounded-full dark:bg-dark" />},
-    {name: "Makefile", icon: <MakefileIcon className="!w-[64px] !h-[64px]" />},
-    {name: "NPM", icon: <NPMIcon className="!w-[64px] !h-[64px] pt-5" />},
-    {name: "Webpack", icon: <WebpackIcon className="!w-[64px] !h-[64px]" />},
+    {name: "Git", icon: <GitIcon className={`${size}`} />},
+    {name: "Github", icon: <GithubIcon className={`${size} border border-solid rounded-full dark:bg-dark`} />},
+    {name: "Makefile", icon: <MakefileIcon className={`${size}`} />},
+    {name: "NPM", icon: <NPMIcon className={`${size} pt-5`} />},
+    {name: "Webpack", icon: <WebpackIcon className={`${size}`} />},
 ]
 
 
 const Card = ({type, skills}) => {
     return (
-        <article className='w-full col-span-4 flex flex-col items-center rounded-2xl border border-solid border-dark bg-light shadow-2xl p-6 relative dark:bg-dark dark:border-light xs:p-4 lg:col-span-6 md:col-span-12'>
-                
+        <article className='w-full col-span-4 flex flex-col items-center rounded-2xl border border-solid border-dark bg-light shadow-2xl p-6 relative dark:bg-dark dark:border-light xs:p-3 sm:p-4 lg:col-span-6 md:col-span-12'>
             <div className='w-full flex flex-col items-center dark:bg-dark'>
-                <div className='text-dark font-bold text-3xl mb-5 dark:text-light lg:text-2xl md:text-xl'>{type}</div>
+                <div className='text-dark font-bold text-3xl mb-5 dark:text-light lg:text-2xl md:text-xl sm:text-lg xs:text-base'>{type}</div>
                 <ul className='flex flex-col items-center gap-5'>
                     {skills.map((skill) => 
                         <li key={skill.name} className='flex flex-col justify-center items-center'>
@@ -69,8 +69,8 @@ const Card = ({type, skills}) => {
 const Skills = () => {
 return (
     <div className="w-full bg-gray-100 p-8 pt-12 flex flex-col items-center dark:bg-dark dark:text-light">
-        <h2 className="pb-6 text-7xl font-bold my-6 lg:!text-7xl sm:!text-6xl xs:!text-4xl">Skills</h2>
-        <div className="w-full grid grid-cols-12 gap-16 gap-y-16">
+        <h2 className="pb-6 text-7xl font-bold my-6 lg:!text-6xl sm:!text-5xl xs:!text-3xl">Skills</h2>
+        <div className="w-full grid grid-cols-12 gap-16 gap-y-16 lg:gap-10 sm:gap-8 xs:gap-6">
             <Card type="Languages" skills={languages} />
             <Card type="Frontend" skills={frontend} />
             <Card type="Backend" skills={backend} />

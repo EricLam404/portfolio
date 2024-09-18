@@ -33,7 +33,7 @@ export default function Home() {
                 Explore my latest projects showcasing my expertise in full-stack development.
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
-                <Link href="/dummy.pdf" target='_blank' className='flex items-center bg-dark text-light p-2.5 px-6 
+                <Link href="/Eric_Lam_Resume.pdf" target='_blank' className='flex items-center bg-dark text-light p-2.5 px-6 
                 rounded-lg text-lg font-semibold
                 border-2 border-solid border-transparent
                 hover:bg-light hover:text-dark hover:border-dark

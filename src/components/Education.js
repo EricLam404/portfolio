@@ -44,10 +44,10 @@ const Education = () => {
                 className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px'/>
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details 
-                    type="Bachelor Of Arts In Computer Science"
-                    time="September 2022 - May 2025"
-                    place="Hunter College"
-                    info="Relevant Courses: Data Structures, Algorithms, Discrete Mathematics, Matrix Algebra, Applied Statistics, Computer Architecture, Software Analysis and Design"
+                    type="Bachelor Of Arts In Computer Science, Minor in Math"
+                    time="September 2022 - Dec 2025"
+                    place="Hunter College | Daedalus Scholar"
+                    info="Relevant Courses: Data Structures, Algorithms, Discrete Mathematics, Matrix Algebra, Applied Statistics, Computer Architecture 1 & 2, Software Analysis and Design, Computer Theory 1, Operating Systems, Database Management, Parallel Computing, Flutter App Dev"
                 />
             </ul>
         </div>

@@ -5,7 +5,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import project1 from 'public/images/projects/etch-a-sketch.png'
+// import project1 from 'public/images/projects/etch-a-sketch.png'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -105,7 +105,7 @@ const projects = () => {
                         <FeaturedProject 
                             title="KwattAchieve"
                             summary="KwattAchieve is a comprehensive platform designed to enhance student engagement and motivation in robotics, coding, and electronics classes."
-                            img={project1}
+                            // img={project1}
                             link="/"
                             type="Featured Project"
                             github="https://github.com/EricLam404/achievement-tracker"
@@ -114,7 +114,7 @@ const projects = () => {
                     <div className='col-span-6 sm:col-span-12'>
                         <Project 
                             title="Etch-a-sketch"
-                            img={project1}
+                            // img={project1}
                             link="https://ericlam404.github.io/etch-a-sketch/"
                             type="Project"
                             github="https://github.com/EricLam404/etch-a-sketch"
@@ -123,7 +123,7 @@ const projects = () => {
                     <div className='col-span-6 sm:col-span-12'>
                         <Project 
                             title="Calculator"
-                            img={project1}
+                            // img={project1}
                             link="https://ericlam404.github.io/calculator/"
                             type="Project"
                             github="https://github.com/EricLam404/calculator"
@@ -132,7 +132,7 @@ const projects = () => {
                     <div className='col-span-6 sm:col-span-12'>
                         <Project 
                             title="Weather App"
-                            img={project1}
+                            // img={project1}
                             link="https://ericlam404.github.io/weather-app/"
                             type="Project"
                             github="https://github.com/EricLam404/weather-app"
@@ -141,7 +141,7 @@ const projects = () => {
                     <div className='col-span-6 sm:col-span-12'>
                         <Project 
                             title="Library"
-                            img={project1}
+                            // img={project1}
                             link="https://ericlam404.github.io/library/"
                             type="Project"
                             github="https://github.com/EricLam404/library"
@@ -150,7 +150,7 @@ const projects = () => {
                     <div className='col-span-6 sm:col-span-12'>
                         <Project 
                             title="To-Do List"
-                            img={project1}
+                            // img={project1}
                             link="https://ericlam404.github.io/todo-list/"
                             type="Project"
                             github="https://github.com/EricLam404/todo-list"
@@ -159,7 +159,7 @@ const projects = () => {
                     <div className='col-span-6 sm:col-span-12'>
                         <Project 
                             title="Where's Waldo"
-                            img={project1}
+                            // img={project1}
                             link="https://wheres-waldo-b6824.web.app/"
                             type="Project"
                             github="https://github.com/EricLam404/wheres-waldo"
@@ -168,7 +168,7 @@ const projects = () => {
                     <div className='col-span-6 sm:col-span-12'>
                         <Project 
                             title="Fortnite Shopping Cart"
-                            img={project1}
+                            // img={project1}
                             link="https://ericlam404.github.io/shopping-cart/"
                             type="Project"
                             github="https://github.com/EricLam404/shopping-cart"
@@ -177,7 +177,7 @@ const projects = () => {
                     <div className='col-span-6 sm:col-span-12'>
                         <Project 
                             title="Crow Gang Discord Bot"
-                            img={project1}
+                            // img={project1}
                             link="/"
                             type="Project"
                             github="https://github.com/EricLam404/crow-gang"

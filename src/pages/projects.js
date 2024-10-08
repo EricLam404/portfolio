@@ -11,7 +11,7 @@ import TransitionEffect from '@/components/TransitionEffect'
 
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({type, title, summary, img, link, github}) => {
+const FeaturedProject = ({type, title, summary, technology, img, link, github}) => {
     return(
         <article className='w-full flex items-center justify-between rounded-3xl 
         border border-solid border-dark bg-light shadow-2xl p-12 
@@ -32,8 +32,8 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
                 />
             </Link>*/}
 
-            <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
-                <span className='text-primary font-medium text-xl dark:text-primaryDark xs:text-base'>{type}</span>
+            <div className='flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
+                <span className='font-medium text-xl xs:text-base flex gap-2'> <div className='text-primary dark:text-primaryDark'>{type}</div> | <div className='text-black dark:text-white'>{technology}</div></span>
                 <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
                     <h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm'>{title}</h2>
                 </Link>
@@ -51,7 +51,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
     )
 }
 
-const Project = ({type, title, img, link, github}) => {
+const Project = ({type, title, technology, img, link, github}) => {
     return (
         <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light shadow-2xl p-6 relative dark:bg-dark dark:border-light xs:p-4'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-2xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem] ' />
@@ -71,7 +71,7 @@ const Project = ({type, title, img, link, github}) => {
             */}
 
             <div className='w-full flex flex-col items-start justify-between mt-4'>
-                <span className='text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base'>{type}</span>
+                <span className='font-medium text-xl lg:text-lg md:text-base flex gap-2'> <div className='text-primary dark:text-primaryDark'>{type}</div>  <div className='text-black dark:text-white'>{technology}</div></span>
                 <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
                     <h2 className='my-2 w-full text-left text-3xl font-bold dark:text-light lg:text-2xl'>{title}</h2>
                 </Link>
@@ -99,16 +99,38 @@ const projects = () => {
         <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
             <Layout className='pt-16'>
                 <AnimatedText text="Transforming ideas into elegant solutions, one line of code at a time." className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
-
+                <AnimatedText text="Updated links and images are coming soon!" className='mb-8 text-xl lg:!text-2xl'/>
                 <div className='grid grid-cols-12 gap-32 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                     <div className='col-span-12'>
                         <FeaturedProject 
-                            title="KwattAchieve"
+                            title="Student Achievement Tracker"
                             summary="KwattAchieve is a comprehensive platform designed to enhance student engagement and motivation in robotics, coding, and electronics classes."
                             // img={project1}
-                            link="/"
+                            technology={"React.js, Express.js, MongoDB, Auth0, OpenAPI/REST API"}
+                            link="#"
                             type="Featured Project"
                             github="https://github.com/EricLam404/achievement-tracker"
+                        />
+                    </div>
+                    <div className='col-span-12'>
+                        <FeaturedProject 
+                            title="Language Learner"
+                            summary="Language Learner is a web application that helps users learn new languages through both traditional studying techniques and AI powered features."
+                            // img={project1}
+                            technology={"Next.js, Express.js, Supabase, Supabase Auth, OpenAI API, GraphQL"}
+                            link="#"
+                            type="Featured Project"
+                            github="#"
+                        />
+                    </div>
+                    <div className='col-span-12'>
+                        <FeaturedProject 
+                            title="MonkeyType Clone"
+                            summary="MonkeyType Clone is a web application that helps users improve their typing speed and accuracy through a variety of typing tests."
+                            link="#"
+                            technology={"Dart/Flutter, Firebase, Firestore, Firebase Auth"}
+                            type="Featured Project"
+                            github="#"
                         />
                     </div>
                     <div className='col-span-6 sm:col-span-12'>
@@ -118,6 +140,15 @@ const projects = () => {
                             link="https://ericlam404.github.io/etch-a-sketch/"
                             type="Project"
                             github="https://github.com/EricLam404/etch-a-sketch"
+                        />
+                    </div>
+                    <div className='col-span-6 sm:col-span-12'>
+                        <Project 
+                            title="Crow Gang Discord Bot"
+                            // img={project1}
+                            link="/"
+                            type="Project"
+                            github="https://github.com/EricLam404/crow-gang"
                         />
                     </div>
                     <div className='col-span-6 sm:col-span-12'>
@@ -172,15 +203,6 @@ const projects = () => {
                             link="https://ericlam404.github.io/shopping-cart/"
                             type="Project"
                             github="https://github.com/EricLam404/shopping-cart"
-                        />
-                    </div>
-                    <div className='col-span-6 sm:col-span-12'>
-                        <Project 
-                            title="Crow Gang Discord Bot"
-                            // img={project1}
-                            link="/"
-                            type="Project"
-                            github="https://github.com/EricLam404/crow-gang"
                         />
                     </div>
                 </div>

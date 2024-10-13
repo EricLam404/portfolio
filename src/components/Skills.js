@@ -29,7 +29,6 @@ const backend = [
     {name: "Node.js", icon: <NodeIcon className={`${size}`} />},
     {name: "Express.js", icon: <ExpressIcon className={`${size}`} />},
     {name: "Go", icon: <GoIcon className={`${size}`} />},
-    {name: "Pthreads", icon: <PthreadsIcon className={`${size}`} />},
     {name: "OpenMPI", icon: <OpenMPIIcon className={`${size}`} />},
     {name: "REST APIs", icon: <RestAPIIcon className={`${size}`} />},
     {name: "Graphql", icon: <GraphQLIcon className={`${size}`} />},

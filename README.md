@@ -7,9 +7,7 @@ In this portfolio, I aim to demonstrate my passion for software engineering and 
 # Technologies
 Throughout my journey as a student and intern, I have worked with a diverse set of technologies and tools. Some of the key technologies I am proficient in include:
 
-**Programming Languages:** Python, C/C++, JavaScript/ Golang
-**Web Development:** HTML, CSS, JavaScript, React, Node.js/Express.js
-**Databases:** SQL, MongoDB, Firebase
-**Other Tools:** Docker, AWS, Heroku
-
-# Projects
+**Languages:** C/C++, Java, Python, JavaScript/TypeScript, HTML, CSS, SQL, Go, Dart  
+**Frameworks & Libraries:** React.js, Next.js, Node.js, Express.js, Flutter, REST APIs, GraphQL  
+**Developer Tools:** Git, Docker, GCP (Firebase, Cloud Run, Cloud SQL), AWS (EC2, Lambda, S3), Jest  
+**Database & Data Management:** PostgreSQL, MongoDB, Firestore, Supabase, Neo4j, Prisma  

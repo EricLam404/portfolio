@@ -103,6 +103,17 @@ const projects = () => {
                 <div className='grid grid-cols-12 gap-32 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                     <div className='col-span-12'>
                         <FeaturedProject 
+                            title="LingoVoyage"
+                            summary="LingoVoyage is a web application that helps users learn new languages through both traditional studying techniques and AI powered features."
+                            // img={project1}
+                            technology={"Next.js, Express.js, Supabase, Supabase Auth, OpenAI API, GraphQL"}
+                            link="#"
+                            type="Featured Project"
+                            github="#"
+                        />
+                    </div>
+                    <div className='col-span-12'>
+                        <FeaturedProject 
                             title="Student Achievement Tracker"
                             summary="KwattAchieve is a comprehensive platform designed to enhance student engagement and motivation in robotics, coding, and electronics classes."
                             // img={project1}
@@ -114,22 +125,30 @@ const projects = () => {
                     </div>
                     <div className='col-span-12'>
                         <FeaturedProject 
-                            title="Language Learner"
-                            summary="Language Learner is a web application that helps users learn new languages through both traditional studying techniques and AI powered features."
-                            // img={project1}
-                            technology={"Next.js, Express.js, Supabase, Supabase Auth, OpenAI API, GraphQL"}
+                            title="TypeRush"
+                            summary="TypeRush is a full stack web application that helps users improve their typing speed and accuracy through a variety of typing tests. It is based off of MonkeyType."
                             link="#"
+                            technology={"Dart, Flutter, Firebase, Firestore, Firebase Auth"}
                             type="Featured Project"
                             github="#"
                         />
                     </div>
                     <div className='col-span-12'>
                         <FeaturedProject 
-                            title="MonkeyType Clone"
-                            summary="MonkeyType Clone is a web application that helps users improve their typing speed and accuracy through a variety of typing tests."
+                            title="Exploreo"
+                            summary="Exploreo is a full stack mobile application that allows users to plan trips and explore new places."
                             link="#"
-                            technology={"Dart/Flutter, Firebase, Firestore, Firebase Auth"}
+                            technology={"Dart, Flutter, Firebase, Firebase Auth, Cloud SQL, Cloud Run, Postgres"}
                             type="Featured Project"
+                            github="#"
+                        />
+                    </div>
+                    <div className='col-span-6 sm:col-span-12'>
+                        <Project 
+                            title="Potluck Planner"
+                            // img={project1}
+                            link="#"
+                            type="Project"
                             github="#"
                         />
                     </div>

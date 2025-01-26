@@ -8,7 +8,7 @@ import { GitIcon, GithubIcon, MakefileIcon, NPMIcon, WebpackIcon, DockerIcon, GC
 
 const size = "!w-[64px] !h-[64px] sm:!w-[48px] sm:!h-[48px] xs:!w-[40px] xs:!h-[40px]";
 const languages = [
-    {name: "JavaScript/Typescript", icon: <JSIcon className={`${size}`} />},
+    {name: "JS/TS", icon: <JSIcon className={`${size}`} />},
     {name: "Python", icon: <PythonIcon className={`${size}`} />},
     {name: "C/C++", icon: <CppIcon className={`${size}`} />},
     {name: "HTML", icon: <HTMLIcon className={`${size}`} />},
@@ -63,9 +63,9 @@ const Card = ({type, skills}) => {
         <article className='w-full col-span-4 flex flex-col items-center rounded-2xl border border-solid border-dark bg-light shadow-2xl p-6 relative dark:bg-dark dark:border-light xs:p-3 sm:p-4 lg:col-span-6 md:col-span-12'>
             <div className='w-full flex flex-col items-center dark:bg-dark'>
                 <div className='text-dark font-bold text-3xl mb-5 dark:text-light lg:text-2xl md:text-xl sm:text-lg xs:text-base'>{type}</div>
-                <ul className='flex flex-col items-center gap-5'>
+                <ul className='grid grid-cols-9 items-center gap-5'>
                     {skills.map((skill) => 
-                        <li key={skill.name} className='flex flex-col justify-center items-center'>
+                        <li key={skill.name} className='col-span-3 flex flex-col justify-center items-center'>
                             <div className='p-2 bg-light rounded-2xl flex items-center justify-center'>{skill.icon}</div>
                             <div className='pt-3'>{skill.name}</div>
                         </li>
@@ -78,7 +78,7 @@ const Card = ({type, skills}) => {
 
 const Skills = () => {
 return (
-    <div className="w-full bg-gray-100 p-8 mt-12 flex flex-col items-center dark:bg-dark dark:text-light">
+    <div className="w-full bg-gray-100 p-8 mt-12 mb-32 flex flex-col items-center dark:bg-dark dark:text-light">
         <h2 className="pb-6 text-7xl font-bold my-6 lg:!text-6xl sm:!text-5xl xs:!text-3xl">Skills</h2>
         <div className="w-full grid grid-cols-12 gap-16 gap-y-16 lg:gap-10 sm:gap-8 xs:gap-6">
             <Card type="Languages" skills={languages} />

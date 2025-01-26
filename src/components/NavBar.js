@@ -60,7 +60,9 @@ const NavBar = () => {
         <div className='w-full flex justify-between items-center lg:hidden' >
             <nav>
                 <CustomLink href="/" title="Home" className='mr-4'/>
-                <CustomLink href="/about" title="About" className='mx-4'/>
+                <CustomLink href="/about" title="About Me" className='mx-4'/>
+                <CustomLink href="/experience" title="Experience" className='mx-4'/>
+                <CustomLink href="/education" title="Education" className='mx-4'/>
                 <CustomLink href="/projects" title="Projects" className='mx-4'/>
                 <CustomLink href="/contact" title="Contact Me" className='ml-4'/>
             </nav>
@@ -102,6 +104,8 @@ const NavBar = () => {
                     <nav className='flex items-center flex-col justify-center'>
                         <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
                         <CustomMobileLink href="/about" title="About" className='' toggle={handleClick}/>
+                        <CustomMobileLink href="/experience" title="Experience" className='' toggle={handleClick}/>
+                        <CustomMobileLink href="/education" title="Education" className='' toggle={handleClick}/>
                         <CustomMobileLink href="/projects" title="Projects" className='' toggle={handleClick}/>
                         <CustomMobileLink href="/contact" title="Contact Me" className='' toggle={handleClick}/>
                     </nav>

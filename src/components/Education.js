@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { motion, useScroll } from 'framer-motion'
-import LiIcon from './LiIcon'
+import LiIcon from '../components/LiIcon'
 
 const Details = ({ type, time, place, info }) => {
     const ref = useRef(null);
@@ -34,9 +34,9 @@ const Education = () => {
         }
     );
     return (
-    <div className='my-64'>
+    <div className='mb-32'>
         <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:4xl md:mb-16'>
-            Experience
+            Education
         </h2>
         <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
             <motion.div 
@@ -45,9 +45,9 @@ const Education = () => {
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details 
                     type="Bachelor Of Arts In Computer Science, Minor in Math"
-                    time="September 2022 - Dec 2025"
+                    time="Aug 2022 - Dec 2025"
                     place="Hunter College | Daedalus Scholar"
-                    info="Relevant Courses: Data Structures, Algorithms, Discrete Mathematics, Matrix Algebra, Applied Statistics, Computer Architecture 1 & 2, Software Analysis and Design, Computer Theory 1, Operating Systems, Database Management, Parallel Computing, Flutter App Dev"
+                    info="Relevant Courses: Data Structures, Algorithms, Discrete Mathematics, Matrix Algebra, Applied Statistics, Computer Architecture 1 & 2, Software Analysis and Design, Computer Theory 1, Operating Systems, Database Management, Parallel Computing, Flutter App Developmen, Machine Learning"
                 />
             </ul>
         </div>

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-import LiIcon from "./LiIcon";
+import LiIcon from "../components/LiIcon";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
     const ref = useRef(null);
@@ -41,7 +41,7 @@ const Experience = () => {
         offset: ["start end", "center start"],
     });
     return (
-        <div className="my-64">
+        <div className="mb-32">
             <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:4xl md:mb-16">
                 Experience
             </h2>
@@ -59,21 +59,21 @@ const Experience = () => {
                         company="Auristor Inc."
                         time="July 2024 - August 2024"
                         address="New York City, New York"
-                        work="Software Engineer Intern"
+                        work="At AuriStor, I developed a React-based dashboard to simplify CLI operations, making a complex file system more accessible to non-technical users. I also created client documentation for deployments and revived a legacy Apache module to enable secure AFS web logins."
                     />
                     <Details
-                        position="Software Engineer Intern"
+                        position="Backend Software Engineer Intern"
                         company="Pulp Technology"
-                        time="June 2023 - August 2024"
+                        time="June 2023 - August 2023"
                         address="New York City, New York"
-                        work="Backend Software Engineer Intern"
+                        work="As a backend intern, I led a team to design an MVP for a text analysis tool, building a scalable GraphQL API and optimizing data pipelines. I also engineered a Neo4j schema for sub-100ms queries and integrated ML models with OpenAI."
                     />
                     <Details
                         position="Coding and Robotics Instructor"
                         company="Kwatt.io Tech Center"
-                        time="July 2022"
+                        time="July 2022 - Present"
                         address="New York City, New York"
-                        work="Coding and Robotics Instructor"
+                        work="I taught web development and robotics to over 100 students, creating hands-on projects to boost engagement and problem-solving skills. My mentorship helped students enhance their programming abilities using robotic sensors and creative coding challenges."
                     />
                 </ul>
             </div>
